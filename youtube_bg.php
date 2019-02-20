@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>selectの操作</title>
+<title>YOUTUBE 背景配置</title>
 <script src="lib/cmn_js/jquery-2.2.4.js"></script>
 <link rel="stylesheet" type="text/css" href="lib/cmn_js/YTPlayer-master/jquery.mb.YTPlayer.min.css">
 <script src="lib/cmn_js/YTPlayer-master/jquery.mb.YTPlayer.min.js"></script>
