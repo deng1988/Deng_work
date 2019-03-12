@@ -13,13 +13,10 @@
 <link rel="stylesheet" type="text/css" href="lib/cmn_js/YTPlayer-master/jquery.mb.YTPlayer.min.css">
 <script src="lib/cmn_js/YTPlayer-master/jquery.mb.YTPlayer.min.js"></script>
 <script type="text/javascript">
-
-
 $(document).ready(function(){
 	$("#bgVideo").YTPlayer();
 
 });
-
 </script>
 <style>
 body {
