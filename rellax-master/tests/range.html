@@ -45,6 +45,18 @@
 			box-shadow: 0 .5rem 2rem -1rem rgba(0,0,0,1);
 			will-change: transform;
 		}
+		.rellax01 {
+			background:red;
+			color: #fff;
+			position: absolute;
+			top: 0; left: 0;
+			height: 100%; width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0 .5rem 2rem -1rem rgba(0,0,0,1);
+			will-change: transform;
+		}
 	</style>
 
 </head>
@@ -64,11 +76,29 @@
 			<div class="rellax" data-rellax-speed="-5" data-rellax-max="120">max: 120</div>
 		</div>
 	</div>
+    
+    
+    <div class="flex s01">
+		<div class="rellax-container">
+			<div class="rellax01" data-rellax-speed="-5"> null </div>
+		</div>
+		<div class="rellax-container">
+			<div class="rellax01" data-rellax-speed="-5" data-rellax-min="0">min: 0</div>
+		</div>
+		<div class="rellax-container">
+			<div class="rellax01" data-rellax-speed="-5" data-rellax-min="-120" data-rellax-max="120">min: -120 | max: 120</div>
+		</div>
+		<div class="rellax-container">
+			<div class="rellax01" data-rellax-speed="-5" data-rellax-max="120">max: 120</div>
+		</div>
+	</div>
+    
 
 	<!-- Scripts -->
 	<script src="../rellax.js"></script>
 	<script>
 		var rellax = new Rellax('.rellax', {center: true});
+		var rellax = new Rellax('.rellax01', {wrapper: '.flex.s01'});
 	</script>
 </body>
 </html>
