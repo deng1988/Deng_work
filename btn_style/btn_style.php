@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>BOX-STYLE</title>
+<title>BUTTON-STYLE</title>
 
 <link rel="stylesheet" href="uniq.css">
 
@@ -35,16 +35,25 @@ p{
 
 <body class="contents_area" id="header">
 <div class="btn btn-default">asdas</div>
-<div class="btn btn-default">asdad</div>
-<div class="btn btn-circle"></div>
-<div class="btn btn-success"></div>
-<div class="btn btn-info"></div>
-<div class="btn btn-group"></div>
+<!--▲▲-->
+<div class="btn btn-default">asdad</div><!--▲▲-->
+<div class="btn btn-circle"></div><!--▲▲-->
+<div class="btn btn-success"></div><!--▲▲-->
+<div class="btn btn-info"></div><!--▲▲-->
+<div class="btn btn-group"></div><!--▲▲-->
+
 <div class="animated-box-wrapper">
 <div class="animated-box in">
   <h1>Animated border</h1>
 </div>
+</div><!--▲▲-->
+
+
+<div class="animated-box-wrapper">
+<div class="animated-box01">
+  <h1>Animated border hoverバージョン</h1>
 </div>
+</div><!--▲▲-->
 
 </body>
 </html>
