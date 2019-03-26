@@ -1,0 +1,250 @@
+body {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+.heart-chap{
+	width: 80px;
+	height: 80px;
+	margin:0 auto;
+	padding: 0;
+	background-color:#333;
+	position: relative;
+	&:after{
+     content: "";
+     position:absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: url(img/heart.png) 0 0 no-repeat;
+     background-size: auto 100%;		
+	}
+	&:hover:after{
+		animation: heart-ani 1s steps(28, start) forwards;
+		@keyframes heart-ani {
+                    0% {
+                        background-position: 0 0;
+                    }
+
+                    100% {
+                    	// background-position: -2800px 0; 这个地方要乘80%
+                        background-position: -2240px 0;
+                    }
+        }
+	}
+}
+
+
+
+
+.hover-kaki-ul {
+    margin: 40px auto;
+    padding: 0;
+    max-width: 800px;
+    list-style: none;
+    overflow: hidden;
+    background-color: #B7AA92;
+
+    li {
+        width: 16.66%;
+        float: left;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+        position: relative;
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            padding: 40px 0;
+            box-sizing: border-box;
+            color: #000;
+            font-size: 16px;
+            text-decoration: none;
+            position: relative;
+            z-index: 3;
+        }
+    }
+
+    .about {
+        &:after {
+            width: 76px;
+            height: 58px;
+        }
+
+        &:not(.current):hover {
+            &:after {
+                background: url(img/nav_about_ani.png) no-repeat 0 0;
+                animation: about-ani 0.4s steps(9, start) forwards;
+
+                @keyframes about-ani {
+                    0% {
+                        background-position: 0 0;
+                    }
+
+                    100% {
+                        background-position: -684px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //about
+    .menu {
+        &:after {
+            width: 57px;
+            height: 50px;
+        }
+
+
+
+
+        &:not(.current):hover {
+            &:after {
+                background: url(img/nav_plan_ani.png) no-repeat 0 0;
+                animation: plan-ani 0.6s steps(14, start) forwards;
+
+                @keyframes plan-ani {
+                    0% {
+                        background-position: 0 0;
+                    }
+
+                    100% {
+                        background-position: -798px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //menu
+    .price {
+        &:after {
+            width: 75px;
+            height: 42px;
+        }
+
+
+
+
+        &:not(.current):hover {
+            &:after {
+                background: url(img/nav_price_ani.png) no-repeat 0 0;
+                animation: price-ani 0.2s steps(4, start) forwards;
+
+                @keyframes price-ani {
+                    0% {
+                        background-position: 0 0;
+                    }
+
+                    100% {
+                        background-position: -300px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //price
+    .flow {
+        &:after {
+            width: 59px;
+            height: 41px;
+        }
+
+
+
+
+        &:not(.current):hover {
+            &:after {
+                background: url(img/nav_flow_ani.png) no-repeat 0 0;
+                animation: flow-ani 0.5s steps(14, start) forwards;
+
+                @keyframes flow-ani {
+                    0% {
+                        background-position: 0 0;
+                    }
+
+                    100% {
+                        background-position: -826px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //flow
+    .staff {
+        &:after {
+            width: 58px;
+            height: 50px;
+        }
+
+
+
+
+        &:not(.current):hover {
+            &:after {
+                background: url(img/nav_staff_ani.png) no-repeat 0 0;
+                animation: staff-ani 0.3s steps(7, start) forwards;
+
+                @keyframes staff-ani {
+                    0% {
+                        background-position: 0 0;
+                    }
+
+                    100% {
+                        background-position: -406px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //staff
+    .faq {
+        &:after {
+            width: 73px;
+            height: 41px;
+        }
+
+
+
+
+        &:not(.current):hover {
+            &:after {
+                background: url(img/nav_faq_ani.png) no-repeat 0 0;
+                animation: faq-ani 0.5s steps(14, start) forwards;
+
+                @keyframes faq-ani {
+                    0% {
+                        background-position: 0 0;
+                    }
+
+                    100% {
+                        background-position: -1022px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //faq
+
+}
