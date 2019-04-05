@@ -35,6 +35,7 @@ $(function(){
 	display:inline-block;
 	margin:0 2px;
 	background-color:#FFCDCE;
+	background-color:#FFCDCE;
 	}	
 </style>
 
